@@ -224,7 +224,8 @@ console.log("Esercizio 8:", starWarsCharacters);
 */
 for (let i = 0, j = 0; j < femaleCharacters.length; i++) {
   if (femaleCharacters[j].name === charactersNames[i]) {
-    charactersNames[i] = "";
+    // charactersNames[i] = "";
+    charactersNames.splice(i, 1);
     j++;
   }
 }
